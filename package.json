@@ -2,7 +2,7 @@
     "name": "hol-light-simple",
     "displayName": "HOL Light",
     "description": "An extension for VS Code which provides support for HOL Light",
-    "version": "2.7.0",
+    "version": "2.8.0",
     "license": "SEE LICENSE IN LICENSE",
     "publisher": "monadius",
     "engines": {
@@ -19,10 +19,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/hol-light/vscode-hol-light"
+        "url": "https://github.com/hol-light-family/vscode-hol-light"
     },
-    "bugs": "https://github.com/hol-light/vscode-hol-light/issues",
-    "homepage": "https://github.com/hol-light/vscode-hol-light/blob/master/README.md",
+    "bugs": "https://github.com/hol-light-family/vscode-hol-light/issues",
+    "homepage": "https://github.com/hol-light-family/vscode-hol-light/blob/master/README.md",
     "icon (TODO)": "images/hol-light-logo.png",
     "activationEvents": [
         "onWebviewPanel:goalView"
@@ -48,7 +48,7 @@
             {
                 "category": "HOL Light",
                 "command": "hol-light.set_path",
-                "title": "Set HOL Light path"
+                "title": "Set HOL Light Path"
             },
             {
                 "category": "HOL Light",
@@ -397,17 +397,17 @@
                 "hol-light.highlightColor": {
                     "type": "string",
                     "default": "editor.wordHighlightStrongBackground",
-                    "description": "Color for highlighting text sent to a HOL Light REPL. Could be either a reference to a color theme or a color in the format ##RRGGBBAA. If this value is empty then the text is not highlighted"
+                    "description": "Color for highlighting text sent to a HOL Light REPL. Can be either a reference to a color theme or a color in the format #RRGGBBAA. If this value is empty then the text is not highlighted"
                 },
                 "hol-light.highlightColorSuccess": {
                     "type": "string",
                     "default": "diffEditor.insertedTextBackground",
-                    "description": "Color for highlighting successfully executed statements. Could be either a reference to a color theme or a color in the format ##RRGGBBAA. If this value is empty then successfully executed statements are not highlighted"
+                    "description": "Color for highlighting successfully executed statements. Can be either a reference to a color theme or a color in the format #RRGGBBAA. If this value is empty then successfully executed statements are not highlighted"
                 },
                 "hol-light.highlightColorFailure": {
                     "type": "string",
                     "default": "diffEditor.removedTextBackground",
-                    "description": "Color for highlighting statements which executed with errors. Could be either a reference to a color theme or a color in the format ##RRGGBBAA. If this value is empty then failed statements are not highlighted"
+                    "description": "Color for highlighting statements which executed with errors. Can be either a reference to a color theme or a color in the format #RRGGBBAA. If this value is empty then failed statements are not highlighted"
                 }
             }
         },
@@ -523,10 +523,9 @@
         "test": "node ./out/test/runTest.js"
     },
     "dependencies": {
-        "strip-ansi": "^7.1.0"
+        "strip-ansi": "^7.2.0"
     },
     "devDependencies": {
-        "@types/glob": "^8.1.0",
         "@types/mocha": "^10.0.10",
         "@types/node": "16.x",
         "@types/vscode": "^1.78.0",
@@ -534,8 +533,8 @@
         "@typescript-eslint/parser": "^8.43.0",
         "@vscode/test-electron": "^2.3.0",
         "eslint": "^9.33.0",
-        "glob": "^8.1.0",
-        "mocha": "^12.0.0",
+        "glob": "^14.0.6",
+        "mocha": "^12.0.3",
         "ts-loader": "^9.5.4",
         "typescript": "~5.8.3",
         "webpack": "^5.101.3",
